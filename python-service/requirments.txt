@@ -1,0 +1,2 @@
+Flask  # REST API 서버 생성
+numpy  # C-기반 계산 라이브러리
