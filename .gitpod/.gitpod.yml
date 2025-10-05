@@ -3,6 +3,19 @@
 image: gitpod/workspace-full:latest
 
 tasks:
+  - name: Java Client Service
+    # init 명령어를 Java 17 설치로 변경합니다.
+    init: |
+      sudo apt update
+      # openjdk-17-jdk를 설치합니다. (Gitpod 환경에 따라 apt 대신 sdkman이 사용될 수도 있습니다)
+      sudo apt install -y openjdk-17-jdk maven 
+      # 설치 후, 환경 변수를 설정하여 Java 17을 기본으로 사용하도록 합니다.
+      sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+      sudo update-alternatives --set javac /usr/lib/jvm/java-17-openjdk-amd64/bin/javac
+      cd java-service && mvn dependency:go-offline
+      
+    command: cd java-service && mvn spring-boot:run
+
   - name: Python API Server
     init: pip3 install -r python-service/requirements.txt
     # open 속성 제거!
