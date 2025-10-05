@@ -1,0 +1,9 @@
+# 1. Flask 서버의 공개 URL로 요청을 보냅니다.
+# 포트 5000 옆의 'PORTS' 탭에서 복사한 실제 URL로 교체해야 합니다.
+
+POST https://127.0.0.1:5000/api/calculate
+Content-Type: application/json
+
+{
+    "data": [5.5, 10.5, 20.0, 1.0]
+}
