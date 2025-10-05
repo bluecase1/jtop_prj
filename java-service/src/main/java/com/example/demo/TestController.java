@@ -1,6 +1,6 @@
 package com.example.demo; // 실제 프로젝트 패키지명으로 변경
 
-import com.example.demo.PythonApiCaller;cd  // 위에서 만든 서비스 클래스를 import
+import com.example.demo.PythonApiCaller;  // 위에서 만든 서비스 클래스를 import
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
