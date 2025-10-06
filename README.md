@@ -23,3 +23,9 @@ mvn spring-boot:run
 # api 호출
 https://8080-bluecase1-jtopprj-ltdtm858b3e.ws-us121.gitpod.io/test-python-api
 ```
+
+# API Call File 실행 명령어 정리
+```
+# test 파일 수행
+mvn test
+```

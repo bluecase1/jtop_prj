@@ -1,6 +1,8 @@
 package com.example.demo.ApiCallFile; // 프로젝트의 테스트 패키지명에 맞게 변경
 
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +17,8 @@ import static org.hamcrest.Matchers.containsString;
 @SpringBootTest
 @AutoConfigureMockMvc // MockMvc를 자동 설정합니다.
 class ScriptUploadControllerTest {
+
+    private static final Logger logger = LoggerFactory.getLogger(ScriptUploadControllerTest.class);
 
     @Autowired
     private MockMvc mockMvc;
