@@ -1,0 +1,1 @@
+print('[LOCAL] Hello from Python script!')

@@ -1,0 +1,3 @@
+.vscode/settings.json
+*.class
+java-service/target/*
